@@ -22,4 +22,11 @@
 	<bean class="de.hybris.platform.commercefacades.user.data.RegisterData">
 		<property name="birthdate" type="java.util.Date"/>
 	</bean>
+	
+	<bean class="de.hybris.platform.commercefacades.custom.data.IphoneData">
+		<property name="name" type="java.lang.String"/>
+		<property name="price" type="java.lang.String"/>
+		<property name="color" type="java.lang.String"/>
+		<property name="model" type="java.lang.String"/>
+	</bean>
 </beans>

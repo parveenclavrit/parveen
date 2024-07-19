@@ -189,4 +189,23 @@
 		<property name="list" ref="customerConverter"/>
 		<property name="add" ref="customerAgePopulator"/>	
 	</bean>
+	
+	<!-- iphone facade -->
+	<bean id="iphoneFacade" class ="com.training.parveen.facades.iphone.IphoneFacadeImpl">
+		<property name="iphoneConverter" ref ="iphoneConverter"/>
+		<property name="iphoneService" ref ="iphoneService"/>
+		
+	</bean>
+	
+	<bean id="iphoneConverter" parent="abstractPopulatingConverter">
+		<property name="targetClass" value = "de.hybris.platform.commercefacades.custom.data.IphoneData" />
+		<property name="populators">
+			<list>
+				<ref bean="iphonePopulator"/>
+			</list>
+		</property>
+	</bean>
+
+	<bean id="iphonePopulator" class ="com.training.parveen.facades.iphone.populator.IphonePopulator" />
+	
 </beans>
