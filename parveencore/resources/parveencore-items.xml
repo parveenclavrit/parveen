@@ -217,7 +217,7 @@
 			<itemtype code="Customer" autocreate="false"
 				generate="false">
 				<attributes>
-					<attribute  qualifier="birthdate"
+					<attribute   qualifier="birthdate"
 						type="java.util.Date">
 						<modifiers read="true" write="true" search="true" />
 						<persistence type="property" />

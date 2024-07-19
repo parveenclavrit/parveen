@@ -547,4 +547,9 @@
 		<property name="interceptor" ref="customInitDefaultInterceptor" />
 		<property name="typeCode" value="customer" />
 	</bean>
+	
+	<bean id="iphoneDao" class="com.training.parveen.core.iphone.IphoneDao" parent="abstractItemDao">
+		
+	</bean>
+	<bean id="iphoneService" class="com.training.parveen.core.iphone.service.IphoneService" />
 </beans>
